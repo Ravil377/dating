@@ -37,273 +37,273 @@
     const girls = [{
       id: 1,
       info: "Esther, 24",
-      header: "/img/content/esther.jpg",
+      header: "img/content/esther.jpg",
       avatar: "women3",
-      photo: ["/img/content/esther1.jpg", "/img/content/esther2.jpg", "/img/content/esther3.jpg", "/img/content/esther4.jpg", "/img/content/esther5.jpg", "/img/content/esther6.jpg", "/img/content/esther7.jpg"]
+      photo: ["img/content/esther1.jpg", "img/content/esther2.jpg", "img/content/esther3.jpg", "img/content/esther4.jpg", "img/content/esther5.jpg", "img/content/esther6.jpg", "img/content/esther7.jpg"]
     }, {
       id: 2,
       info: "Akane, 25",
-      header: "/img/content/akane.jpg",
+      header: "img/content/akane.jpg",
       avatar: "women3",
-      photo: ["/img/content/img5akane.jpg", "/img/content/img6akane.jpg", "/img/content/img2akane.jpg", "/img/content/img3akane.jpg", "/img/content/img4akane.jpg"]
+      photo: ["img/content/img5akane.jpg", "img/content/img6akane.jpg", "img/content/img2akane.jpg", "img/content/img3akane.jpg", "img/content/img4akane.jpg"]
     }, {
       id: 3,
       info: "Courtney, 22",
-      header: "/img/content/courtney.jpg",
+      header: "img/content/courtney.jpg",
       avatar: "women2",
-      photo: ["/img/content/courtney1.jpg", "/img/content/courtney2.jpg", "/img/content/courtney3.jpg", "/img/content/courtney4.jpg", "/img/content/courtney5.jpg"]
+      photo: ["img/content/courtney1.jpg", "img/content/courtney2.jpg", "img/content/courtney3.jpg", "img/content/courtney4.jpg", "img/content/courtney5.jpg"]
     }, {
       id: 4,
       info: "Bessie, 23",
-      header: "/img/content/bessie.jpg",
+      header: "img/content/bessie.jpg",
       avatar: "women2",
-      photo: ["/img/content/bessie1.jpg", "/img/content/bessie2.jpg", "/img/content/bessie3.jpg", "/img/content/bessie4.jpg", "/img/content/bessie5.jpg"]
+      photo: ["img/content/bessie1.jpg", "img/content/bessie2.jpg", "img/content/bessie3.jpg", "img/content/bessie4.jpg", "img/content/bessie5.jpg"]
     }, {
       id: 5,
       info: "Regina, 32",
-      header: "/img/content/regina.jpg",
+      header: "img/content/regina.jpg",
       avatar: "women6",
-      photo: ["/img/content/regina1.jpg", "/img/content/regina2.jpg", "/img/content/regina3.jpg", "/img/content/regina4.jpg", "/img/content/regina5.jpg", "/img/content/regina6.jpg", "/img/content/regina7.jpg"]
+      photo: ["img/content/regina1.jpg", "img/content/regina2.jpg", "img/content/regina3.jpg", "img/content/regina4.jpg", "img/content/regina5.jpg", "img/content/regina6.jpg", "img/content/regina7.jpg"]
     }, {
       id: 6,
       info: "Tanya, 19",
-      header: "/img/content/tanya6.jpg",
+      header: "img/content/tanya6.jpg",
       avatar: "women6",
-      photo: ["/img/content/tanya1.jpg", "/img/content/tanya2.jpg", "/img/content/tanya3.jpg", "/img/content/tanya4.jpg", "/img/content/tanya5.jpg", "/img/content/tanya6.jpg", "/img/content/tanya7.jpg"]
+      photo: ["img/content/tanya1.jpg", "img/content/tanya2.jpg", "img/content/tanya3.jpg", "img/content/tanya4.jpg", "img/content/tanya5.jpg", "img/content/tanya6.jpg", "img/content/tanya7.jpg"]
     }, {
       id: 7,
       info: "Jane, 30",
-      header: "/img/content/jane.jpg",
+      header: "img/content/jane.jpg",
       avatar: "women6",
-      photo: ["/img/content/jane1.jpg", "/img/content/jane2.jpg", "/img/content/jane3.jpg", "/img/content/jane4.jpg", "/img/content/jane5.jpg", "/img/content/jane6.jpg", "/img/content/jane7.jpg"]
+      photo: ["img/content/jane1.jpg", "img/content/jane2.jpg", "img/content/jane3.jpg", "img/content/jane4.jpg", "img/content/jane5.jpg", "img/content/jane6.jpg", "img/content/jane7.jpg"]
     }, {
       id: 8,
       info: "Gloria, 27",
-      header: "/img/content/gloria.jpg",
+      header: "img/content/gloria.jpg",
       avatar: "women4",
-      photo: ["/img/content/gloria1.jpg", "/img/content/gloria2.jpg", "/img/content/gloria3.jpg", "/img/content/gloria4.jpg", "/img/content/gloria5.jpg"]
+      photo: ["img/content/gloria1.jpg", "img/content/gloria2.jpg", "img/content/gloria3.jpg", "img/content/gloria4.jpg", "img/content/gloria5.jpg"]
     }, {
       id: 9,
       info: "Mia, 25",
-      header: "/img/content/mia.jpg",
+      header: "img/content/mia.jpg",
       avatar: "women6",
-      photo: ["/img/content/mia1.jpg", "/img/content/mia2.jpg", "/img/content/mia3.jpg", "/img/content/mia4.jpg", "/img/content/mia5.jpg"]
+      photo: ["img/content/mia1.jpg", "img/content/mia2.jpg", "img/content/mia3.jpg", "img/content/mia4.jpg", "img/content/mia5.jpg"]
     }, {
       id: 10,
       info: "Anna, 18",
-      header: "/img/content/anna.jpg",
+      header: "img/content/anna.jpg",
       avatar: "women5",
-      photo: ["/img/content/anna1.jpg", "/img/content/anna2.jpg", "/img/content/anna3.jpg", "/img/content/anna4.jpg", "/img/content/anna5.jpg", "/img/content/anna6.jpg", "/img/content/anna7.jpg"]
+      photo: ["img/content/anna1.jpg", "img/content/anna2.jpg", "img/content/anna3.jpg", "img/content/anna4.jpg", "img/content/anna5.jpg", "img/content/anna6.jpg", "img/content/anna7.jpg"]
     }, {
       id: 11,
       info: "Kristin, 35",
-      header: "/img/content/kristin.jpg",
+      header: "img/content/kristin.jpg",
       avatar: "women6",
-      photo: ["/img/content/kristin1.jpg", "/img/content/kristin2.jpg", "/img/content/kristin3.jpg", "/img/content/kristin4.jpg", "/img/content/kristin5.jpg"]
+      photo: ["img/content/kristin1.jpg", "img/content/kristin2.jpg", "img/content/kristin3.jpg", "img/content/kristin4.jpg", "img/content/kristin5.jpg"]
     }, {
       id: 12,
       info: "Azami, 25",
-      header: "/img/content/azami.jpg",
+      header: "img/content/azami.jpg",
       avatar: "women5",
-      photo: ["/img/content/azami1.jpg", "/img/content/azami2.jpg", "/img/content/azami3.jpg", "/img/content/azami4.jpg", "/img/content/azami5.jpg", "/img/content/azami6.jpg", "/img/content/azami7.jpg"]
+      photo: ["img/content/azami1.jpg", "img/content/azami2.jpg", "img/content/azami3.jpg", "img/content/azami4.jpg", "img/content/azami5.jpg", "img/content/azami6.jpg", "img/content/azami7.jpg"]
     }, {
       id: 13,
       info: "Judith, 26",
-      header: "/img/content/judith.jpg",
+      header: "img/content/judith.jpg",
       avatar: "women6",
-      photo: ["/img/content/judith1.jpg", "/img/content/judith2.jpg", "/img/content/judith3.jpg", "/img/content/judith4.jpg", "/img/content/judith5.jpg", "/img/content/judith6.jpg", "/img/content/judith7.jpg"]
+      photo: ["img/content/judith1.jpg", "img/content/judith2.jpg", "img/content/judith3.jpg", "img/content/judith4.jpg", "img/content/judith5.jpg", "img/content/judith6.jpg", "img/content/judith7.jpg"]
     }, {
       id: 14,
       info: "Claire, 18",
-      header: "/img/content/claire.jpg",
+      header: "img/content/claire.jpg",
       avatar: "women2",
-      photo: ["/img/content/claire1.jpg", "/img/content/claire2.jpg", "/img/content/claire3.jpg", "/img/content/claire4.jpg", "/img/content/claire5.jpg"]
+      photo: ["img/content/claire1.jpg", "img/content/claire2.jpg", "img/content/claire3.jpg", "img/content/claire4.jpg", "img/content/claire5.jpg"]
     }, {
       id: 15,
       info: "Arlene, 21",
-      header: "/img/content/arlene.jpg",
+      header: "img/content/arlene.jpg",
       avatar: "women3",
-      photo: ["/img/content/arlene1.jpg", "/img/content/arlene2.jpg", "/img/content/arlene3.jpg", "/img/content/arlene4.jpg", "/img/content/arlene5.jpg"]
+      photo: ["img/content/arlene1.jpg", "img/content/arlene2.jpg", "img/content/arlene3.jpg", "img/content/arlene4.jpg", "img/content/arlene5.jpg"]
     }, {
       id: 16,
       info: "Serenity, 19",
-      header: "/img/content/serenity.jpg",
+      header: "img/content/serenity.jpg",
       avatar: "women3",
-      photo: ["/img/content/serenity1.jpg", "/img/content/serenity2.jpg", "/img/content/serenity3.jpg", "/img/content/serenity4.jpg", "/img/content/serenity5.jpg"]
+      photo: ["img/content/serenity1.jpg", "img/content/serenity2.jpg", "img/content/serenity3.jpg", "img/content/serenity4.jpg", "img/content/serenity5.jpg"]
     }, {
       id: 17,
       info: "Bunko, 29",
-      header: "/img/content/bunko5.jpg",
+      header: "img/content/bunko5.jpg",
       avatar: "women5",
-      photo: ["/img/content/bunko1.jpg", "/img/content/bunko2.jpg", "/img/content/bunko3.jpg", "/img/content/bunko4.jpg", "/img/content/bunko5.jpg"]
+      photo: ["img/content/bunko1.jpg", "img/content/bunko2.jpg", "img/content/bunko3.jpg", "img/content/bunko4.jpg", "img/content/bunko5.jpg"]
     }, {
       id: 18,
       info: "Dai, 21",
-      header: "/img/content/dai.jpg",
+      header: "img/content/dai.jpg",
       avatar: "women5",
-      photo: ["/img/content/dai1.jpg", "/img/content/dai2.jpg", "/img/content/dai3.jpg", "/img/content/dai4.jpg", "/img/content/dai5.jpg"]
+      photo: ["img/content/dai1.jpg", "img/content/dai2.jpg", "img/content/dai3.jpg", "img/content/dai4.jpg", "img/content/dai5.jpg"]
     }, {
       id: 19,
       info: "Eiko, 29",
-      header: "/img/content/eiko.jpg",
+      header: "img/content/eiko.jpg",
       avatar: "women4",
-      photo: ["/img/content/eiko1.jpg", "/img/content/eiko2.jpg", "/img/content/eiko3.jpg", "/img/content/eiko4.jpg", "/img/content/eiko5.jpg", "/img/content/eiko6.jpg", "/img/content/eiko7.jpg"]
+      photo: ["img/content/eiko1.jpg", "img/content/eiko2.jpg", "img/content/eiko3.jpg", "img/content/eiko4.jpg", "img/content/eiko5.jpg", "img/content/eiko6.jpg", "img/content/eiko7.jpg"]
     }, {
       id: 20,
       info: "Kali, 32",
-      header: "/img/content/kali.jpg",
+      header: "img/content/kali.jpg",
       avatar: "women5",
-      photo: ["/img/content/kali1.jpg", "/img/content/kali2.jpg", "/img/content/kali3.jpg", "/img/content/kali4.jpg", "/img/content/kali5.jpg", "/img/content/kali6.jpg", "/img/content/kali7.jpg"]
+      photo: ["img/content/kali1.jpg", "img/content/kali2.jpg", "img/content/kali3.jpg", "img/content/kali4.jpg", "img/content/kali5.jpg", "img/content/kali6.jpg", "img/content/kali7.jpg"]
     }, {
       id: 21,
       info: "Zara, 22",
-      header: "/img/content/zara.jpg",
+      header: "img/content/zara.jpg",
       avatar: "women6",
-      photo: ["/img/content/zara1.jpg", "/img/content/zara2.jpg", "/img/content/zara3.jpg", "/img/content/zara4.jpg", "/img/content/zara5.jpg"]
+      photo: ["img/content/zara1.jpg", "img/content/zara2.jpg", "img/content/zara3.jpg", "img/content/zara4.jpg", "img/content/zara5.jpg"]
     }, {
       id: 22,
       info: "Mira, 30",
-      header: "/img/content/mira.jpg",
+      header: "img/content/mira.jpg",
       avatar: "women5",
-      photo: ["/img/content/mira1.jpg", "/img/content/mira2.jpg", "/img/content/mira3.jpg", "/img/content/mira4.jpg", "/img/content/mira5.jpg"]
+      photo: ["img/content/mira1.jpg", "img/content/mira2.jpg", "img/content/mira3.jpg", "img/content/mira4.jpg", "img/content/mira5.jpg"]
     }, {
       id: 23,
       info: "Mazie, 27",
-      header: "/img/content/mazie.jpg",
+      header: "img/content/mazie.jpg",
       avatar: "women5",
-      photo: ["/img/content/mazie1.jpg", "/img/content/mazie2.jpg", "/img/content/mazie3.jpg", "/img/content/mazie4.jpg", "/img/content/mazie5.jpg"]
+      photo: ["img/content/mazie1.jpg", "img/content/mazie2.jpg", "img/content/mazie3.jpg", "img/content/mazie4.jpg", "img/content/mazie5.jpg"]
     }, {
       id: 24,
       info: "Nora, 21",
-      header: "/img/content/nora.jpg",
+      header: "img/content/nora.jpg",
       avatar: "women5",
-      photo: ["/img/content/nora1.jpg", "/img/content/nora2.jpg", "/img/content/nora3.jpg", "/img/content/nora4.jpg", "/img/content/nora5.jpg", "/img/content/nora6.jpg", "/img/content/nora7.jpg"]
+      photo: ["img/content/nora1.jpg", "img/content/nora2.jpg", "img/content/nora3.jpg", "img/content/nora4.jpg", "img/content/nora5.jpg", "img/content/nora6.jpg", "img/content/nora7.jpg"]
     }, {
       id: 25,
       info: "Kamala, 26",
-      header: "/img/content/kamala.jpg",
+      header: "img/content/kamala.jpg",
       avatar: "women3",
-      photo: ["/img/content/kamala1.jpg", "/img/content/kamala2.jpg", "/img/content/kamala3.jpg", "/img/content/kamala4.jpg", "/img/content/kamala5.jpg"]
+      photo: ["img/content/kamala1.jpg", "img/content/kamala2.jpg", "img/content/kamala3.jpg", "img/content/kamala4.jpg", "img/content/kamala5.jpg"]
     }, {
       id: 26,
       info: "Nori, 29",
-      header: "/img/content/nori.png",
+      header: "img/content/nori.png",
       avatar: "women4",
-      photo: ["/img/content/nori1.png", "/img/content/nori2.png", "/img/content/nori3.png", "/img/content/nori4.png", "/img/content/nori5.png"]
+      photo: ["img/content/nori1.png", "img/content/nori2.png", "img/content/nori3.png", "img/content/nori4.png", "img/content/nori5.png"]
     }, {
       id: 27,
       info: "Erika, 20",
-      header: "/img/content/erika.png",
+      header: "img/content/erika.png",
       avatar: "women4",
-      photo: ["/img/content/erika1.png", "/img/content/erika2.png", "/img/content/erika3.png", "/img/content/erika4.png", "/img/content/erika5.png"]
+      photo: ["img/content/erika1.png", "img/content/erika2.png", "img/content/erika3.png", "img/content/erika4.png", "img/content/erika5.png"]
     }, {
       id: 28,
       info: "Kasumi, 25",
-      header: "/img/content/kasumi.png",
+      header: "img/content/kasumi.png",
       avatar: "women5",
-      photo: ["/img/content/kasumi1.png", "/img/content/kasumi2.png", "/img/content/kasumi3.png", "/img/content/kasumi4.png", "/img/content/kasumi5.png"]
+      photo: ["img/content/kasumi1.png", "img/content/kasumi2.png", "img/content/kasumi3.png", "img/content/kasumi4.png", "img/content/kasumi5.png"]
     }, {
       id: 29,
       info: "Keon, 23",
-      header: "/img/content/keon.png",
+      header: "img/content/keon.png",
       avatar: "women4",
-      photo: ["/img/content/keon1.png", "/img/content/keon2.png", "/img/content/keon3.png", "/img/content/keon4.png", "/img/content/keon5.png", "/img/content/keon6.png", "/img/content/keon7.png"]
+      photo: ["img/content/keon1.png", "img/content/keon2.png", "img/content/keon3.png", "img/content/keon4.png", "img/content/keon5.png", "img/content/keon6.png", "img/content/keon7.png"]
     }, {
       id: 30,
       info: "Minji, 27",
-      header: "/img/content/minji.png",
+      header: "img/content/minji.png",
       avatar: "women5",
-      photo: ["/img/content/minji1.png", "/img/content/minji2.png", "/img/content/minji3.png", "/img/content/minji4.png", "/img/content/minji5.png", "/img/content/minji6.png", "/img/content/minji7.png"]
+      photo: ["img/content/minji1.png", "img/content/minji2.png", "img/content/minji3.png", "img/content/minji4.png", "img/content/minji5.png", "img/content/minji6.png", "img/content/minji7.png"]
     }, {
       id: 31,
       info: "Yujin, 32",
-      header: "/img/content/yujin.png",
+      header: "img/content/yujin.png",
       avatar: "women5",
-      photo: ["/img/content/yujin1.png", "/img/content/yujin2.png", "/img/content/yujin3.png", "/img/content/yujin4.png", "/img/content/yujin5.png"]
+      photo: ["img/content/yujin1.png", "img/content/yujin2.png", "img/content/yujin3.png", "img/content/yujin4.png", "img/content/yujin5.png"]
     }, {
       id: 32,
       info: "jane, 18",
-      header: "/img/content/jane.png",
+      header: "img/content/jane.png",
       avatar: "women2",
-      photo: ["/img/content/jane1.png", "/img/content/jane2.png", "/img/content/jane3.png", "/img/content/jane4.png", "/img/content/jane5.png"]
+      photo: ["img/content/jane1.png", "img/content/jane2.png", "img/content/jane3.png", "img/content/jane4.png", "img/content/jane5.png"]
     }, {
       id: 33,
       info: "lily, 18",
-      header: "/img/content/lily.png",
+      header: "img/content/lily.png",
       avatar: "women4",
-      photo: ["/img/content/lily1.png", "/img/content/lily2.png", "/img/content/lily3.png", "/img/content/lily4.png", "/img/content/lily5.png"]
+      photo: ["img/content/lily1.png", "img/content/lily2.png", "img/content/lily3.png", "img/content/lily4.png", "img/content/lily5.png"]
     }, {
       id: 34,
       info: "Alice, 28",
-      header: "/img/content/alice.png",
+      header: "img/content/alice.png",
       avatar: "women2",
-      photo: ["/img/content/alice1.png", "/img/content/alice2.png", "/img/content/alice3.png", "/img/content/alice4.png", "/img/content/alice5.png"]
+      photo: ["img/content/alice1.png", "img/content/alice2.png", "img/content/alice3.png", "img/content/alice4.png", "img/content/alice5.png"]
     }, {
       id: 35,
       info: "jeong, 24",
-      header: "/img/content/jeong.png",
+      header: "img/content/jeong.png",
       avatar: "women4",
-      photo: ["/img/content/jeong1.png", "/img/content/jeong2.png", "/img/content/jeong3.png", "/img/content/jeong4.png", "/img/content/jeong5.png", "/img/content/jeong6.png", "/img/content/jeong7.png"]
+      photo: ["img/content/jeong1.png", "img/content/jeong2.png", "img/content/jeong3.png", "img/content/jeong4.png", "img/content/jeong5.png", "img/content/jeong6.png", "img/content/jeong7.png"]
     }, {
       id: 36,
       info: "Lin, 27",
-      header: "/img/content/lin.png",
+      header: "img/content/lin.png",
       avatar: "women5",
-      photo: ["/img/content/lin1.png", "/img/content/lin2.png", "/img/content/lin3.png", "/img/content/lin4.png", "/img/content/lin5.png", "/img/content/lin6.png", "/img/content/lin7.png"]
+      photo: ["img/content/lin1.png", "img/content/lin2.png", "img/content/lin3.png", "img/content/lin4.png", "img/content/lin5.png", "img/content/lin6.png", "img/content/lin7.png"]
     }, {
       id: 37,
       info: "Sujin, 27",
-      header: "/img/content/sujin.png",
+      header: "img/content/sujin.png",
       avatar: "women5",
-      photo: ["/img/content/sujin1.png", "/img/content/sujin2.png", "/img/content/sujin3.png", "/img/content/sujin4.png", "/img/content/sujin5.png"]
+      photo: ["img/content/sujin1.png", "img/content/sujin2.png", "img/content/sujin3.png", "img/content/sujin4.png", "img/content/sujin5.png"]
     }, {
       id: 38,
       info: "Subin, 29",
-      header: "/img/content/subin.png",
+      header: "img/content/subin.png",
       avatar: "women5",
-      photo: ["/img/content/subin1.png", "/img/content/subin2.png", "/img/content/subin3.png", "/img/content/subin4.png", "/img/content/subin5.png"]
+      photo: ["img/content/subin1.png", "img/content/subin2.png", "img/content/subin3.png", "img/content/subin4.png", "img/content/subin5.png"]
     }, {
       id: 39,
       info: "Jessica, 19",
-      header: "/img/content/jessica.png",
+      header: "img/content/jessica.png",
       avatar: "women5",
-      photo: ["/img/content/jessica1.png", "/img/content/jessica2.png", "/img/content/jessica3.png", "/img/content/jessica4.png", "/img/content/jessica5.png"]
+      photo: ["img/content/jessica1.png", "img/content/jessica2.png", "img/content/jessica3.png", "img/content/jessica4.png", "img/content/jessica5.png"]
     }, {
       id: 40,
       info: "Lucy, 37",
-      header: "/img/content/lucy.png",
+      header: "img/content/lucy.png",
       avatar: "women6",
-      photo: ["/img/content/lucy1.png", "/img/content/lucy2.png", "/img/content/lucy3.png", "/img/content/lucy4.png", "/img/content/lucy5.png"]
+      photo: ["img/content/lucy1.png", "img/content/lucy2.png", "img/content/lucy3.png", "img/content/lucy4.png", "img/content/lucy5.png"]
     }, {
       id: 41,
       info: "Sarah, 32",
-      header: "/img/content/sarah.png",
+      header: "img/content/sarah.png",
       avatar: "women4",
-      photo: ["/img/content/sarah1.png", "/img/content/sarah2.png", "/img/content/sarah3.png", "/img/content/sarah4.png", "/img/content/sarah5.png"]
+      photo: ["img/content/sarah1.png", "img/content/sarah2.png", "img/content/sarah3.png", "img/content/sarah4.png", "img/content/sarah5.png"]
     }, {
       id: 42,
       info: "Tina, 36",
-      header: "/img/content/tina.png",
+      header: "img/content/tina.png",
       avatar: "women3",
-      photo: ["/img/content/tina1.png", "/img/content/tina2.png", "/img/content/tina3.png", "/img/content/tina4.png", "/img/content/tina5.png"]
+      photo: ["img/content/tina1.png", "img/content/tina2.png", "img/content/tina3.png", "img/content/tina4.png", "img/content/tina5.png"]
     }, {
       id: 43,
       info: "Jisu, 25",
-      header: "/img/content/jisu.png",
+      header: "img/content/jisu.png",
       avatar: "women5",
-      photo: ["/img/content/jisu1.png", "/img/content/jisu2.png", "/img/content/jisu3.png", "/img/content/jisu4.png", "/img/content/jisu5.png", "/img/content/jisu6.png", "/img/content/jisu7.png"]
+      photo: ["img/content/jisu1.png", "img/content/jisu2.png", "img/content/jisu3.png", "img/content/jisu4.png", "img/content/jisu5.png", "img/content/jisu6.png", "img/content/jisu7.png"]
     }, {
       id: 44,
       info: "Crystal, 21",
-      header: "/img/content/crystal.png",
+      header: "img/content/crystal.png",
       avatar: "women4",
-      photo: ["/img/content/crystal1.png", "/img/content/crystal2.png", "/img/content/crystal3.png", "/img/content/crystal4.png", "/img/content/crystal5.png"]
+      photo: ["img/content/crystal1.png", "img/content/crystal2.png", "img/content/crystal3.png", "img/content/crystal4.png", "img/content/crystal5.png"]
     }, {
       id: 45,
       info: "zoe, 29",
-      header: "/img/content/zoe.png",
+      header: "img/content/zoe.png",
       avatar: "women5",
-      photo: ["/img/content/zoe1.png", "/img/content/zoe2.png", "/img/content/zoe3.png", "/img/content/zoe4.png", "/img/content/zoe5.png", "/img/content/zoe6.png", "/img/content/zoe7.png"]
+      photo: ["img/content/zoe1.png", "img/content/zoe2.png", "img/content/zoe3.png", "img/content/zoe4.png", "img/content/zoe5.png", "img/content/zoe6.png", "img/content/zoe7.png"]
     }];
 
     const closeModal = () => {

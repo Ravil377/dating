@@ -420,7 +420,7 @@ template {
 
 .main {
     position: relative;
-    background: url("../img/content/main.jpg");
+    background: url("/img/content/main.jpg");
     background-size: cover;
     width: 100%;
     height: var(--app-height);
