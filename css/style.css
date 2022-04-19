@@ -1710,7 +1710,8 @@ template {
         flex-direction: column;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @keyframes rubberBand {
