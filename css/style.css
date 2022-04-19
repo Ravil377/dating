@@ -1790,17 +1790,8 @@ template {
     width: 100%;
     margin-right: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
-}
-
-.girl__message::after {
-    transition: 0.3s;
-    position: absolute;
-    color: white;
-    left: 20px;
-    top: -20px;
-    opacity: 0;
-    content: "Is typing ...";
 }
 
 .girl__message p {
@@ -1814,7 +1805,16 @@ template {
     margin-bottom: 2px;
 }
 
-.girl__message_write::after {
+.girl__typing {
+    transition: 0.3s;
+    position: absolute;
+    color: white;
+    left: 20px;
+    top: -20px;
+    opacity: 0;
+}
+
+.girl__message_write .girl__typing {
     opacity: 1;
     -webkit-clip-path: inset(0 1ch 0 0);
             clip-path: inset(0 1ch 0 0);
@@ -1822,7 +1822,7 @@ template {
 }
 
 .blur {
-    filter: blur(10px);
+    filter: blur(2px);
 }
 
 .profile__chat-messages .form-container {
@@ -1831,6 +1831,64 @@ template {
     max-width: 320px;
     margin: 20px auto 0;
     overflow: unset;
+}
+
+@keyframes stars {
+    0% {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    50% {
+        font-weight: 700;
+        font-size: 1.35em;
+        color: #961a20;
+    }
+    100% {
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 1.25em;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profile_active label[id="1"] {
+    animation: 1s 0.3s ease-in stars;
+}
+
+.profile_active label[id="2"] {
+    animation: 1.3s 0.3s ease-in stars;
+}
+
+.profile_active label[id="3"] {
+    animation: 1.6s 0.3s ease-in stars;
+}
+
+.profile_active label[id="4"] {
+    animation: 1.9s 0.3s ease-in stars;
+}
+
+.profile_active label[id="5"] {
+    animation: 2.2s 0.3s ease-in stars;
+}
+
+.profile_active button[id="videocall"] {
+    animation: 0.4s 2.5s ease-in scale;
+}
+
+.profile_active button[id="chat"] {
+    animation: 0.4s 2.8s ease-in scale;
 }
 
 .modal {

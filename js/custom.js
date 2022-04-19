@@ -398,6 +398,11 @@
       return sourceArray.slice(0, maxCountGirl);
     }
 
+    function tgtrimm(str) {
+      var ars = str.replace(/[^a-zA-ZА-Яа-яЁё]/gi, '').replace(/\s+/gi, ', ');
+      return ars;
+    }
+
     const girlsRandom = shuffle(girls);
 
     const findGirl = girlId => girlsRandom.find(g => {
@@ -566,6 +571,7 @@
     document.addEventListener("keydown", checkKeyPress);
 
     const createMessage = (message, isUser = true) => {
+      const name = tgtrimm(document.querySelector('.profile__name-js').textContent);
       const chatContainer = document.querySelector(".profile__chat-messages-js");
       const list = ["girl__message", "girl__message_write"];
       let mesElement;
@@ -579,6 +585,10 @@
         }
 
         mesElement = document.createElement("div");
+        let girlWrite = document.createElement('p');
+        girlWrite.textContent = `${name} is typing...`;
+        girlWrite.classList.add('girl__typing');
+        mesElement.append(girlWrite);
         mesElement.classList.add(...list);
         mesElement.dataset.message = countMessage;
         chatContainer.append(mesElement);
