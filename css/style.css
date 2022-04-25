@@ -1823,7 +1823,7 @@ template {
 }
 
 .blur {
-    filter: blur(2px);
+    filter: blur(4px);
 }
 
 .profile__chat-messages .form-container {
@@ -1864,32 +1864,32 @@ template {
     }
 }
 
-.profile_active label[id="1"] {
-    animation: 1s 0.3s ease-in stars;
+.profile_active.profile_animation label[id="1"] {
+    animation: 1s 0.3s ease-in running stars;
 }
 
-.profile_active label[id="2"] {
-    animation: 1.3s 0.3s ease-in stars;
+.profile_active.profile_animation label[id="2"] {
+    animation: 1.3s 0.3s ease-in running stars;
 }
 
-.profile_active label[id="3"] {
-    animation: 1.6s 0.3s ease-in stars;
+.profile_active.profile_animation label[id="3"] {
+    animation: 1.6s 0.3s ease-in running stars;
 }
 
-.profile_active label[id="4"] {
-    animation: 1.9s 0.3s ease-in stars;
+.profile_active.profile_animation label[id="4"] {
+    animation: 1.9s 0.3s ease-in running stars;
 }
 
-.profile_active label[id="5"] {
-    animation: 2.2s 0.3s ease-in stars;
+.profile_active.profile_animation label[id="5"] {
+    animation: 2.2s 0.3s ease-in running stars;
 }
 
-.profile_active button[id="videocall"] {
-    animation: 0.4s 2.5s ease-in scale;
+.profile_active.profile_animation button[id="videocall"] {
+    animation: 0.4s 2.5s ease-in running scale;
 }
 
-.profile_active button[id="chat"] {
-    animation: 0.4s 2.8s ease-in scale;
+.profile_active.profile_animation button[id="chat"] {
+    animation: 0.4s 2.8s ease-in running scale;
 }
 
 .modal {

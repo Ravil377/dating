@@ -15,6 +15,7 @@
     const chatContainer = document.querySelector(".profile__chat-js");
     const signUpBtn = document.querySelector(".header__btnSignUp-js");
     const otherGirlsBtn = document.querySelector(".map_btn-js");
+    const imgContainer = profile.querySelector(".profile__gallery-js");
     let cloneForm;
     let countMessage = 0; // const body = document.querySelector(".body");
 
@@ -43,13 +44,13 @@
     }, {
       id: 2,
       info: "Akane, 25",
-      header: "img/content/akane.jpg",
+      header: "img/content/akane.png",
       avatar: "women3",
       photo: ["img/content/img5akane.jpg", "img/content/img6akane.jpg", "img/content/img2akane.jpg", "img/content/img3akane.jpg", "img/content/img4akane.jpg"]
     }, {
       id: 3,
       info: "Courtney, 22",
-      header: "img/content/courtney.jpg",
+      header: "img/content/courtney.png",
       avatar: "women2",
       photo: ["img/content/courtney1.jpg", "img/content/courtney2.jpg", "img/content/courtney3.jpg", "img/content/courtney4.jpg", "img/content/courtney5.jpg"]
     }, {
@@ -61,25 +62,25 @@
     }, {
       id: 5,
       info: "Regina, 32",
-      header: "img/content/regina.jpg",
+      header: "img/content/regina.png",
       avatar: "women6",
       photo: ["img/content/regina1.jpg", "img/content/regina2.jpg", "img/content/regina3.jpg", "img/content/regina4.jpg", "img/content/regina5.jpg", "img/content/regina6.jpg", "img/content/regina7.jpg"]
     }, {
       id: 6,
       info: "Tanya, 19",
-      header: "img/content/tanya6.jpg",
+      header: "img/content/tanya.png",
       avatar: "women6",
       photo: ["img/content/tanya1.jpg", "img/content/tanya2.jpg", "img/content/tanya3.jpg", "img/content/tanya4.jpg", "img/content/tanya5.jpg", "img/content/tanya6.jpg", "img/content/tanya7.jpg"]
     }, {
       id: 7,
       info: "Jane, 30",
-      header: "img/content/jane.jpg",
+      header: "img/content/jane.png",
       avatar: "women6",
       photo: ["img/content/jane1.jpg", "img/content/jane2.jpg", "img/content/jane3.jpg", "img/content/jane4.jpg", "img/content/jane5.jpg", "img/content/jane6.jpg", "img/content/jane7.jpg"]
     }, {
       id: 8,
       info: "Gloria, 27",
-      header: "img/content/gloria.jpg",
+      header: "img/content/gloria.png",
       avatar: "women4",
       photo: ["img/content/gloria1.jpg", "img/content/gloria2.jpg", "img/content/gloria3.jpg", "img/content/gloria4.jpg", "img/content/gloria5.jpg"]
     }, {
@@ -133,7 +134,7 @@
     }, {
       id: 17,
       info: "Bunko, 29",
-      header: "img/content/bunko5.jpg",
+      header: "img/content/bunko.png",
       avatar: "women5",
       photo: ["img/content/bunko1.jpg", "img/content/bunko2.jpg", "img/content/bunko3.jpg", "img/content/bunko4.jpg", "img/content/bunko5.jpg"]
     }, {
@@ -163,7 +164,7 @@
     }, {
       id: 22,
       info: "Mira, 30",
-      header: "img/content/mira.jpg",
+      header: "img/content/mira.png",
       avatar: "women5",
       photo: ["img/content/mira1.jpg", "img/content/mira2.jpg", "img/content/mira3.jpg", "img/content/mira4.jpg", "img/content/mira5.jpg"]
     }, {
@@ -289,7 +290,7 @@
     }, {
       id: 43,
       info: "Jisu, 25",
-      header: "img/content/jisu7.png",
+      header: "img/content/jisu.png",
       avatar: "women5",
       photo: ["img/content/jisu1.png", "img/content/jisu2.png", "img/content/jisu3.png", "img/content/jisu4.png", "img/content/jisu5.png", "img/content/jisu6.png", "img/content/jisu7.png"]
     }, {
@@ -433,12 +434,12 @@
 
     const updateProfile = girl => {
       resetStars();
+      profile.classList.remove("profile_animation");
       let girlCard;
       profile.querySelector(".profile__nextBtn-js").dataset.restart == "true" ? (girlCard = girlsRandom[0], profile.querySelector(".profile__nextBtn-js").dataset.restart = false) : girlCard = girl;
       profile.querySelector(".profile__header-img-js").src = girlCard.header;
       profile.querySelector(".profile__name-js").textContent = girlCard.info;
       profile.querySelector(".profile__nextBtn-js").dataset.girlid = girlCard.id;
-      const imgContainer = profile.querySelector(".profile__gallery-js");
       imgContainer.innerHTML = "";
       girlCard.photo.forEach(g => {
         let img = document.createElement("img");
@@ -446,6 +447,9 @@
         img.alt = girlCard.info;
         imgContainer.append(img);
       });
+      setTimeout(() => {
+        profile.classList.add("profile_animation");
+      }, 100);
     };
 
     unlockBtn.addEventListener("click", () => main.classList.add("main__unvisible"));
@@ -455,15 +459,23 @@
       if (girl) {
         updateProfile(girl);
         profile.classList.add("profile_active");
+        profile.classList.add("profile_animation");
         footer.style.display = "none";
         header.classList.add("header_back");
       }
     });
+    let maxNextBtnPress = 0;
     heartBtn.addEventListener("click", () => map.classList.add("main__map_active"));
     nextBtn.addEventListener("click", () => {
+      maxNextBtnPress++;
       const id = profile.querySelector(".profile__nextBtn-js").dataset.girlid;
       const girl = nextGirl(id);
-      updateProfile(girl);
+
+      if (maxNextBtnPress == 7) {
+        openModal();
+      } else {
+        updateProfile(girl);
+      }
     });
 
     function initGirlsMap(girls) {
@@ -499,7 +511,20 @@
     const chat = () => profile.classList.add("profile_chat");
 
     videoCallBtn.addEventListener("click", videoCall);
-    chatBtn.addEventListener("click", chat);
+    chatBtn.addEventListener("click", () => {
+      countMessage = 0;
+      chat();
+    });
+    imgContainer.addEventListener('click', () => {
+      profile.classList.remove("profile_animation");
+      document.querySelector('.profile__header').scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+      setTimeout(() => {
+        profile.classList.add("profile_animation");
+      }, 100);
+    });
     backBtn.addEventListener("click", () => {
       if (profile.classList.contains("profile_videocall")) {
         form.classList.remove("form-container_active");
@@ -512,7 +537,7 @@
         profile.classList.remove("profile_chat");
         document.querySelector(".profile__chat-messages-js").innerHTML = "";
         messageContainer.style.display = "flex";
-        chatContainer.querySelector(".form-container-js").remove();
+        chatContainer.querySelector(".form-container-js") && chatContainer.querySelector(".form-container-js").remove();
         countMessage = 0;
         return;
       }
@@ -553,25 +578,23 @@
         const id = e.target.id;
         openModal(id);
       });
-    });
-
-    const checkKeyPress = e => {
-      if (e.code === "Escape") {
-        closeModal();
-      }
-    };
-
-    const checkPressOverlay = e => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    };
-
-    modal.addEventListener("click", e => checkPressOverlay(e));
-    document.addEventListener("keydown", checkKeyPress);
+    }); // const checkKeyPress = (e) => {
+    //     if (e.code === "Escape") {
+    //         closeModal();
+    //     }
+    // };
+    // const checkPressOverlay = (e) => {
+    //     if (e.target === modal) {
+    //         closeModal();
+    //     }
+    // };
+    // modal.addEventListener("click", (e) => checkPressOverlay(e));
+    // document.addEventListener("keydown", checkKeyPress);
 
     const createMessage = (message, isUser = true) => {
       const name = tgtrimm(document.querySelector('.profile__name-js').textContent);
+      input.setAttribute("disabled", "true");
+      sendBtn.setAttribute("disabled", "true");
       const chatContainer = document.querySelector(".profile__chat-messages-js");
       const list = ["girl__message", "girl__message_write"];
       let mesElement;
