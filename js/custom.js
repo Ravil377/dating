@@ -488,7 +488,7 @@
         let element = girlTemplate.content.cloneNode(true);
         element.querySelector(".main__map-girl").id = girl.id;
         element.querySelector(".main__map-girl-info").textContent = girl.info;
-        element.querySelector(`[id="avatar"]`).src = `/img/content/${girl.avatar}.png`;
+        element.querySelector(`[id="avatar"]`).src = `./img/content/${girl.avatar}.png`;
         mapGirlsContainer.append(element);
       });
     }
