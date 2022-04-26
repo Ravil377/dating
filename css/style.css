@@ -886,6 +886,10 @@ template {
 }
 
 .avatar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
     border-radius: 50%;
     overflow: hidden;
     width: 53px;

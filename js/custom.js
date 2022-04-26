@@ -454,7 +454,11 @@
 
     unlockBtn.addEventListener("click", () => main.classList.add("main__unvisible"));
     map.addEventListener("click", e => {
-      const girl = findGirl(e.target.closest(".main__map-girl-js").id);
+      let girl;
+
+      if (e.target.closest(".main__map-girl-js")) {
+        girl = findGirl(e.target.closest(".main__map-girl-js").id);
+      }
 
       if (girl) {
         updateProfile(girl);
@@ -484,7 +488,7 @@
         let element = girlTemplate.content.cloneNode(true);
         element.querySelector(".main__map-girl").id = girl.id;
         element.querySelector(".main__map-girl-info").textContent = girl.info;
-        element.querySelector(".avatar").childNodes[1].href.baseVal = `img/symbols.svg#${girl.avatar}`;
+        element.querySelector(`[id="avatar"]`).src = `/img/content/${girl.avatar}.png`;
         mapGirlsContainer.append(element);
       });
     }
